@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project Form</title>
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+  <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="row justify-content-center">
+		<div class="col-md-8"> 
+			<div class="card">
+					<div class="card-header">Project Form</div>
+		            <div class="card-body">
+		            	<div class="jumbotron">
+		            		<p>Name: John Doe</p>
+		            		<p>Email: john.doe@ves.ac.in</p>
+		            		<p>Team ID: 420</p>
+		            	</div>
+		                <form action="projectForm" method="POST">
+
+		                    <div class="form-group row">
+		                        <label for="projectName" class="col-md-4 col-form-label text-md-right">Project Name</label>
+		                        <input type="text" name="projectName" value="Project Name" readonly="readonly">
+		                    </div>
+
+		                    <div class="form-group row">
+		                        <label for="description" class="col-md-4 col-form-label text-md-right">Description</label>
+		                        <textarea rows = "4" cols = "60" name = "description"></textarea>
+		                    </div>
+
+		                    <div class="form-group row">
+		                        <label for="contribution" class="col-md-4 col-form-label text-md-right">Contribution</label>
+		                        <input type="text" name="contribution">
+		                    </div>
+
+		                    <div class="form-group row">
+		                        <label for="approach" class="col-md-4 col-form-label text-md-right">Approach</label>
+		                        <input type="text" name="approach">
+		                    </div>
+
+		                    <div class="form-group row">
+		                        <label for="file" class="col-md-4 col-form-label text-md-right">File(if any)</label>
+		                        <input type="file" name="file">
+		                    </div>
+
+		                    <div class="form-group row mb-0">
+		                        <div class="col-md-6 offset-md-4">
+		                            <button type="submit" class="btn btn-primary">
+		                                Submit
+		                            </button>
+		                        </div>
+		                    </div>
+		                </form>
+		            </div>
+		        </div>
+		    </div>
+		</div>    
+	</div>
+</body>
+</html>
